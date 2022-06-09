@@ -1,0 +1,1 @@
+web: java -jar build/libs/simple-example.jar
