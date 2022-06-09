@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+
+    <body>
+        Внимание! Валюта указывается буквенным кодом в ISO 4217.
+        <form action="/check" method="get">
+            <input type="text" name="symbol" placeholder="Укажите валюту" class="symbolInput"><br>
+        </form><br>
+        <img th:src="${url}"><br>
+        <p th:text="${info}"></p>
+    </body>
+</html>
